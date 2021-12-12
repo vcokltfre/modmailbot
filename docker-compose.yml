@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  modmail:
+    build: .
+    restart: always
+    volumes:
+      - ./db:/bot/db
+    ports:
+      - 8890:8890
